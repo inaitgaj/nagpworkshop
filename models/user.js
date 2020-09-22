@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 const Schema = mongoose.Schema;
 const jwtSecret = process.env.JWT_SECRET;
 const saltRounds = process.env.SALT_ROUNDS || 10;
-
+console.log('user.js',jwtSecret);
 const UserSchema = new Schema({
   username: String,
   password: String,
